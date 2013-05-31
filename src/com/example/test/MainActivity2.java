@@ -21,7 +21,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
  
-public class MainActivity2 extends Activity implements OnClickListener{
+public class MainActivity2 extends Activity {
     public static final String SERVERIP = getIpAddress().toString().substring(1);
     public static final int SERVERPORT = 4444;
       public TextView text1;
@@ -36,12 +36,12 @@ public class MainActivity2 extends Activity implements OnClickListener{
         setContentView(R.layout.activity_main_activity2);
         text1=(TextView)findViewById(R.id.textView1);
         input=(EditText)findViewById(R.id.editText1);
-        btn = (Button)findViewById(R.id.button1);
-        btn.setOnClickListener(this);
-        btn2 = (Button)findViewById(R.id.button2);
-        btn2.setOnClickListener(this);
-        btn3 = (Button)findViewById(R.id.button3);
-        btn3.setOnClickListener(this);
+//        btn = (Button)findViewById(R.id.button1);
+//        btn.setOnClickListener(this);
+//        btn2 = (Button)findViewById(R.id.button2);
+//        btn2.setOnClickListener(this);
+//        btn3 = (Button)findViewById(R.id.button3);
+//        btn3.setOnClickListener(this);
         start=false;
         new Thread(new Server()).start();
         try {
@@ -58,6 +58,7 @@ public class MainActivity2 extends Activity implements OnClickListener{
       }
       };
     }
+    
  
     public class Client implements Runnable {
         @Override
@@ -66,7 +67,7 @@ public class MainActivity2 extends Activity implements OnClickListener{
             {
             }
             try {
-            	
+             
                 
                         Thread.sleep(500);
                   } catch (InterruptedException e1) {
@@ -121,8 +122,8 @@ public class Server implements Runnable {
                 }
         }
 }
-      @Override
-      public void onClick(View v) {
+      
+      public void MyClick(View v) {
             // TODO Auto-generated method stub
     	  switch(v.getId())
     	  {
