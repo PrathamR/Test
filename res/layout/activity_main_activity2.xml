@@ -42,7 +42,8 @@
         android:layout_alignLeft="@+id/editText1"
         android:layout_below="@+id/editText1"
         android:layout_marginTop="40dp"
-        android:text="Button" />
+        android:text="Button"
+        android:onClick="MyClick"/>
 
     <Button
         android:id="@+id/button2"
@@ -51,7 +52,8 @@
         android:layout_alignRight="@+id/editText1"
         android:layout_below="@+id/textView2"
         android:layout_marginTop="56dp"
-        android:text="Board" />
+        android:text="Board"
+        android:onClick="MyClick"/>
 
     <Button
         android:id="@+id/button3"
@@ -60,6 +62,7 @@
         android:layout_alignBaseline="@+id/button1"
         android:layout_alignBottom="@+id/button1"
         android:layout_alignRight="@+id/editText1"
-        android:text="GetIp" />
+        android:text="GetIp"
+        android:onClick="MyClick"/>
 
 </RelativeLayout>
