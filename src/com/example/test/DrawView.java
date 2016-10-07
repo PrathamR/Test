@@ -28,7 +28,8 @@ public class DrawView extends View implements OnTouchListener {
         paint.setColor(Color.BLACK);
     }
 
-    @Override
+ 
+   @Override
     public void onDraw(Canvas canvas) {
     	
     	first = true;
@@ -70,4 +71,4 @@ public class DrawView extends View implements OnTouchListener {
 
 class Point {
     float x, y;
-}
+}   
